@@ -13,8 +13,13 @@ first_last(last_first("Bugs Bunny"))  # returns "Bugs Bunny"
 #YOUR
 #FUNCTION BELOW HERE
 
+def last_first(name):
+    first, last = name.split()
+    return f"{last}, {first}"
 
-
+def first_last(name):
+    last, first = name.split(", ")
+    return f"{first} {last}"
 
 
 
